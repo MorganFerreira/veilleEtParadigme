@@ -1319,16 +1319,18 @@
               
               <div class="card">
                   <div class="card-header">
-                      <h3>Clean Architecture</h3>
+                      <h3>Programmation orientée objet</h3>
                       <span class="card-badge">Structurant</span>
                   </div>
                   <div class="card-content">
-                      <p>Architecture en couches favorisant l'indépendance du domaine et la testabilité.</p>
+                      <p>La programmation orientée objet (POO) est un paradigme de programmation qui se concentre sur les
+                        données d'une application. L'objectif de la POO est de faciliter l'écriture et la maintenance du code.
+                        Les langages de POO sont conçus pour que les programmeurs puissent facilement créer, réutiliser et
+                        partager du code qui traite de problèmes et d'objets du monde réel</p>
                       
                       <div class="tag-container">
                           <span class="tag positive">Découplage</span>
                           <span class="tag positive">Testabilité</span>
-                          <span class="tag warning">Verbosité</span>
                           <span class="tag warning">Complexité initiale</span>
                       </div>
                       
@@ -1356,21 +1358,18 @@
                           <div class="pros">
                               <h4>Points forts</h4>
                               <ul>
-                                  <li>* Indépendance des frameworks</li>
-                                  <li>* Excellente testabilité</li>
-                                  <li>* Séparation claire des préoccupations</li>
-                                  <li>* Adaptabilité aux changements</li>
-                                  <li>* Domaine métier au centre de l'architecture</li>
+                                  <li>* Encapsulation: lie la donnée au code qui la manipule tout en la protégeant des actions pouvant l'altérer</li>
+                                  <li>* Abstraction: affiche ou masque les détails d'un objet à l'utilisateur pour n'exposer que les éléments qui leur seront utile</li>
+                                  <li>* Polymorphisme: une méthode peut avoir plusieurs façons d'être exécutée suivant la nature des paramètres qu'elle reçoit</li>
+                                  <li>* Héritage: permet à un objet d'acquérir les propriétés d'un autre objet</li>
                               </ul>
                           </div>
                           <div class="cons">
                               <h4>Inconvénients</h4>
                               <ul>
-                                  <li>* Verbosité (nombreuses interfaces et mappeurs)</li>
-                                  <li>* Investissement initial important</li>
-                                  <li>* Peut paraître excessif pour des applications simples</li>
-                                  <li>* Risque de sur-ingénierie</li>
-                                  <li>* Courbe d'apprentissage pour les nouveaux développeurs</li>
+                                  <li>* Peut augmenter la complexité et la taille du code</li>
+                                  <li>* Peut rendre le code plus difficile à comprendre, à déboguer et à tester</li>
+                                  <li>* Peut consommer plus de mémoire et de ressources</li>
                               </ul>
                           </div>
                       </div>
@@ -1379,128 +1378,18 @@
                       <h4>Sources</h4>
                       <ul class="source-list">
                           <li class="source-item">
-                              <a href="https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html" class="source-link" target="_blank">Uncle Bob - The Clean Architecture</a>
+                              <a href="https://fr.linkedin.com/advice/1/what-advantages-disadvantages-object-oriented-k0nlf?lang=fr&lang=fr#:~:text=La%20POO%20permet%20aux%20programmeurs,et%20des%20problèmes%20de%20performances." class="source-link" target="_blank">Avantages et les inconvénients de la programmation orientée objet</a>
                           </li>
                           <li class="source-item">
-                              <a href="https://spring.io/blog/2023/06/19/spring-boot-clean-architecture" class="source-link" target="_blank">Spring Boot avec Clean Architecture</a>
+                              <a href="https://www.baeldung.com/java-oop" class="source-link" target="_blank">Object-Oriented-Programming Concepts in Java</a>
                           </li>
                           <li class="source-item">
-                              <a href="https://www.baeldung.com/spring-boot-clean-architecture" class="source-link" target="_blank">Baeldung - Clean Architecture avec Spring Boot</a>
-                          </li>
-                          <li class="source-item">
-                              <a href="https://www.youtube.com/watch?v=mbNzUkNjrnA" class="source-link video" target="_blank" data-watchtime="">Anatomy of a Spring Boot App with Clean Architecture by Steve Pember</a>
+                              <a href="https://x.com/NikkiSiapno/status/1905569412410982766" class="source-link" target="_blank">Nikki Siapno, Object-oriented programming explained</a>
                           </li>
                       </ul>
                   </div>
               </div>
           </div>
-      </section>
-          
-      <section id="recommendations">
-          <h2 class="section-title">Document d'architecture</h2>
-
-          <div class="card">
-            <div class="card-header" style="background-color: #4caf50;">
-                <h3>Architecture de l'application</h3>
-            </div>
-            <div class="card-content">
-                <p>- Notre client Knesh souhaite un site e-commerce disponible en permanence, avec des technologies éprouvées et performantes.
-                Ce site devra être rapide et être facile d'utilisation. Les coûts et l'évolutivité du site sont aussi à prendre en compte.
-                A partir de la veille réalisée ci-avant et compte tenu de ces demandes, je propose une architecture orientée service. En effet,
-                une architecture de microservices est une architecture dans laquelle l'application est composée de plusieurs services indépendants 
-                et faiblement couplés, chacun ayant sa propre base de code, sa propre base de données et sa propre interface utilisateur. Ces 
-                services communiquent entre eux par le biais d'API bien définies et peuvent être déployés, mis à jour et mis à l'échelle indépendamment. 
-                Ce modèle offre de nombreux avantages, tels que la flexibilité, la modularité, la résilience et l'agilité, ainsi que la possibilité 
-                d'utiliser différentes technologies et frameworks pour différents services. Cependant, cela présente également certains défis, tels 
-                que la complexité, la coordination, les tests et la surveillance.</p>                  
-                
-                <h4 style="margin-top: 1.5rem;">Avantages</h4>
-                <ul>
-                    <li>* Communication simple: fonctionne à 100 % sur Internet</li>
-                    <li>* Normes de sécurité strictes: aucun client ne peut accéder aux systèmes internes</li>
-                </ul>
-                
-                <h4 style="margin-top: 1.5rem;">Inconvénients</h4>
-                <ul>
-                    <li>* Les clients ont besoin d'Internet pour utiliser la bibliothèque</li>
-                    <li>* Le contrôleur de services web peut être surchargé et subir des problèmes de performance</li>
-                </ul>
-            </div>
-          </div>
-
-          <div class="card">
-              <div class="card-header" style="background-color: #4caf50;">
-                  <h3>Librairies</h3>
-              </div>
-              <div class="card-content">
-                  <p>Basé sur notre veille technologique, voici les recommandations pour optimiser le développement des applications Angular et Java chez Gen-Z Web pour Knesh :</p>
-                  
-                  <h4 style="margin-top: 1.5rem;">Pour les Tests Angular</h4>
-                  <ul>
-                      <li><strong>* Jest</strong> comme framework principal de tests unitaires</li>
-                      <li><strong>* Cypress</strong> pour les tests end-to-end</li>
-                  </ul>
-                  
-                  <h4 style="margin-top: 1.5rem;">Pour les Tests Java</h4>
-                  <ul>
-                      <li><strong>* JUnit 5</strong> comme framework principal</li>
-                      <li><strong>* Mockito</strong> pour les mocks et les tests d'intégration</li>
-                  </ul>
-                  
-                  <h4 style="margin-top: 1.5rem;">Pour les Composants UI Angular</h4>
-                  <ul>
-                      <li><strong>* Angular Material</strong> comme bibliothèque principale pour sa cohérence et sa maintenance par l'équipe Angular</li>
-                      <li>* Développement d'une <strong>bibliothèque interne de composants</strong> basée sur Angular Material pour uniformiser l'expérience utilisateur</li>
-                  </ul>                        
-              </div>
-          </div>
-
-          <div class="card">
-            <div class="card-header" style="background-color: #4caf50;">
-                <h3>Paradigmes: </h3>
-            </div>
-            <div class="card-content">
-                <h4 style="margin-top: 1.5rem;">Front-end: Signals</h4>
-                <ul>
-                    <li><strong>- Avantages</strong></li>
-                        <ul>
-                            <li>* API simple et intuitive</li>
-                            <li>* Meilleures performances que RxJS pour des cas simples</li>
-                            <li>* Réactivité fine et granulaire</li>
-                            <li>* Intégré nativement dans Angular 16+</li>
-                            <li>* Plus léger que NgRx</li>
-                        </ul>
-                    <li><strong>- Inconvénients</strong></li>
-                        <ul>
-                            <li>* Relativement nouveau, écosystème limité</li>
-                            <li>* Documentation encore en développement</li>
-                            <li>* Moins flexible que RxJS pour certains cas complexes</li>
-                            <li>* Patterns d'utilisation encore en évolution</li>
-                            <li>* Nécessite souvent une combinaison avec RxJS</li>
-                        </ul>
-                </ul>
-                
-                <h4 style="margin-top: 1.5rem;">Back-end: Clean Architecture</h4>
-                <ul>
-                    <li><strong>- Avantages</strong></li>
-                        <ul>
-                            <li>* Indépendance des frameworks</li>
-                            <li>* Excellente testabilité</li>
-                            <li>* Séparation claire des préoccupations</li>
-                            <li>* Adaptabilité aux changements</li>
-                            <li>* Domaine métier au centre de l'architecture</li>
-                        </ul>
-                    <li><strong>- Inconvénients</strong></li>
-                        <ul>
-                            <li>* Verbosité (nombreuses interfaces et mappeurs)</li>
-                            <li>* Investissement initial important</li>
-                            <li>* Peut paraître excessif pour des applications simples</li>
-                            <li>* Risque de sur-ingénierie</li>
-                            <li>* Courbe d'apprentissage pour les nouveaux développeurs</li>
-                        </ul>
-                </ul>                     
-            </div>
-        </div>
       </section>
   </main>
 </body>
